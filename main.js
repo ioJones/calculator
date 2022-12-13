@@ -18,7 +18,6 @@ smallScreenValue =""
 bigScreenValue=""
 bigScreen = $('#big-screen')
 smallScreen = $('#small-screen')
-bigScreen.value=bigScreenValue
 root.addEventListener('click',tar)
 
 function tar(e){
@@ -47,17 +46,17 @@ function tar(e){
             
            
        
-    } else if (key.value === "del"){
+    } else if (e.target.innerText.indexOf('del')>-1){
         log(bigScreenValue)
         if (bigScreenValue.length > 0){
-            del = bigScreenValue.substr(0, bigScreenValue.length - 2)
-            bigScreen.value=del
-            log(del, bigScreenValue)
+            bigScreenValue = bigScreenValue.substr(0, bigScreenValue.length - 1)
+            bigScreen.value=bigScreenValue
+            log(bigScreenValue)
         } else{
             log('3')
-            if (smallScreenValue.length >0){
-                smallScreenValue.substr(0, smallScreenValue.length-1)
-                
+            if (smallScreenValue.length > 0){
+                smallScreenValue = smallScreenValue.substr(0, smallScreenValue.length-1)
+                smallScreen.value = smallScreenValue
             }
         
         }
@@ -79,6 +78,6 @@ function tar(e){
     return e.target
 } 
 
-// 
+
 
 
