@@ -70,9 +70,15 @@ function tar(e){
         bigScreen.value=ans
         smallScreen.value = e.target.innerText + ' of ' + smallScreenValue.substr(0, smallScreenValue.length-5) +  '='
 
+    }else if (e.target.classList.value.indexOf('clr')>-1){
+        smallScreenValue=""
+        smallScreen.value = ""
+        bigScreenValue = ""
+        bigScreen.value=""
     }
-}
+    return e.target
+} 
 
-
+// 
 
 
