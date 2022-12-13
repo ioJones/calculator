@@ -36,7 +36,12 @@ function tar(e){
         smallScreenValue = smallScreenValue.concat("", bigScreenValue + e.target.innerText)
         bigScreenValue=""
         smallScreen.value = smallScreenValue
-        log("===")   
+        
+        if (e.target.innerText.indexOf('=')>-1) {
+            ans = eval(smallScreenValue.substr(0, smallScreenValue.length-1))
+            bigScreen.value=ans
+            log(ans)
+        }
         return 
     } else if((e.target.innerText === 'del')){
     // log(keyValue,"del") 
