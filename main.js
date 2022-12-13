@@ -21,7 +21,11 @@ function tar(e){
     bigScreen = $('#big-screen')
     smallScreen = $('#small-screen')
     key = e.target.classList
-    
+    if (smallScreen.value.indexOf('=')>-1){
+        log('working')
+        smallScreenValue=""
+        smallScreen.value = ""
+    }
     if(key.value === "numbers"){
         bigScreenValue = bigScreenValue.concat("",e.target.innerText)
         bigScreen.value = bigScreenValue
