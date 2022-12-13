@@ -12,21 +12,34 @@ const addClass = (selector, className, scope) => {
 }
 
 root.addEventListener('click',tar)
-keyValue =[]
+big = $('#big')
+
+log(big.reset())
+smallScreenValue =""
+bigScreenValue=""
 function tar(e){
-    
     bigScreen = $('#big-screen')
     smallScreen = $('#small-screen')
-    log(bigScreen, smallScreen)
+    key = e.target.classList
     
-    keyValue.push(e.target.innerText)
-bigScreen.value = e.target.innerText
-log(keyValue) 
-if (e.target.innerText === '='){
-    log(keyValue,"yes") 
+    if(key.value === "numbers"){
+        bigScreenValue = bigScreenValue.concat("",e.target.innerText)
+        bigScreen.value = bigScreenValue
+        
+
+    }else if (key.value !== "numbers"){
+        bigScreen.value = ""
+        smallScreenValue = smallScreenValue.concat("", bigScreenValue + e.target.innerText)
+        bigScreenValue=""
+        smallScreen.value = smallScreenValue
+        log("===")   
+        return 
+    } else if((e.target.innerText === 'del')){
+    // log(keyValue,"del") 
+    return 
 }
 
- return e.target.innerText
+//  
  
 }
 
