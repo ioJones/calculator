@@ -3,11 +3,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
     <title>Calculator</title>
 </head>
 <body>
     <main id="root">
-
+        <div class="screen">
+            <input class = "screenInput" type="text" id="big-screen">
+            <input class = "screenInput" type="text" id="small-screen">
+        </div>
+        <div id="buttons">
+            <div  style =" grid-column: 3; grid-row:5 ;"class="operators"><span>c</span></div>
+            <div  style =" grid-column: 4;grid-row: ;"class="operators"><span>*</span></div>
+            <div  style =" grid-column: 1;grid-row: 1;"class="operators sqrt"><span>sqrt</span></div>
+            <div  style =" grid-column: ;grid-row: ;"class="operators"><span>-</span></div>
+            <div  style =" grid-column: 3;grid-row: 1;"class="operators"><span>/</span></div>
+            <div  style =" grid-column: 4;grid-row: 1;"class="operators del"><span>del</span></div>
+            <div  style =" grid-column: 4;grid-row: 4; background-color:rgb(61, 155, 61)"class="operators"><span>+</span></div>
+            <div  style =" grid-column: 2;grid-row: 1;"class="operators"><span>%</span></div>
+            <div  style =" grid-column: 3;grid-row: 2;"class="numbers"><span>9</span></div>
+            <div  style =" grid-column: 2;grid-row: 2;"class="numbers"><span>8</span></div>
+            <div  style =" grid-column: 1;grid-row: 2;"class="numbers"><span>7</span></div>
+            <div  style =" grid-column: 3;grid-row: 3;"class="numbers"><span>6</span></div>
+            <div  style =" grid-column: 2;grid-row: 3;"class="numbers"><span>5</span></div>
+            <div  style =" grid-column: 1;grid-row: 3;"class="numbers" ><span>4</span></div>
+            <div  style =" grid-column:3 ;grid-row:4 ;"class="numbers" ><span>3</span></div>
+            <div  style =" grid-column: 2;grid-row:4 ;"class="numbers" ><span>2</span></div>
+            <div  style =" grid-column: 1;grid-row:4 ;"class="numbers" ><span>1</span></div>
+            <div  style =" grid-column: 2;grid-row: 5;"class="numbers" ><span>.</span></div>
+            <div style =" grid-column: 4;grid-row: 5;"class="operators equals" ><span>=</span></div>
+            <div  style =" grid-column: 1/2;"class="numbers" ><span>0</span></div>
+    </div>
+        
     </main>
     <script src="/main.js"></script>
 </body>
