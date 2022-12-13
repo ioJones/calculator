@@ -112,6 +112,6 @@ grid-template-columns: repeat(4, 1fr);
     background-color: white;
 }
 
-span{
+span, i{
     pointer-events: none;
 }

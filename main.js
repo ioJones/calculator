@@ -46,7 +46,7 @@ function tar(e){
             
            
        
-    } else if (e.target.innerText.indexOf('del')>-1){
+    } else if (e.target.classList.value.indexOf('del')>-1){
         log(bigScreenValue)
         if (bigScreenValue.length > 0){
             bigScreenValue = bigScreenValue.substr(0, bigScreenValue.length - 1)
@@ -62,12 +62,12 @@ function tar(e){
         }
 
 
-    } else if (e.target.innerText.indexOf('sqrt')>-1){
+    } else if (e.target.classList.value.indexOf('sqrt')>-1){
         smallScreenValue = smallScreenValue.concat("", bigScreenValue + '**0.5' )
         
         ans = eval(smallScreenValue)
         bigScreen.value=ans
-        smallScreen.value = e.target.innerText + ' of ' + smallScreenValue.substr(0, smallScreenValue.length-5) +  '='
+        smallScreen.value = '√' + smallScreenValue.substr(0, smallScreenValue.length-5) +  '='
 
     }else if (e.target.classList.value.indexOf('clr')>-1){
         smallScreenValue=""
