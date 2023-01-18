@@ -13,37 +13,40 @@ body{
     font-family: Helvetica, sans-serif;
     font-size: 1.5rem;
     display: flex;
+    flex-direction: column;
+}
+
+header{
+    width: 100vw;
+    background-color: rgb(20, 20, 10);
+    color: #edf3ef;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.3rem 10%;
+    align-items: center;
+}
+header *{
+    font-size: 1.4rem;
+    font-weight: 200;
+    color: #edf3ef;
+    transition: 0.4s ease;
+}
+
+header div a:hover{
+    color: rgb(245, 142, 58);
 
 }
 
-/* #root{
-    display: grid;
-    justify-content: center;
-    align-items: center;
-width: fit-content;
-grid-template-columns: repeat(4, 1fr); 
- grid-template-rows: 1fr 1fr 1fr 1fr 1fr; 
-  
-    
-} */
 
 #root{
     display:grid;
-    /* grid-auto-flow: column; */
     grid-template-rows: 0.5fr 2fr;
     width: 300px;
-    /* height: 600px; */
     margin:auto; 
-    /* gap: 10px; */
-    /* padding: 0rem 1rem 2rem; */
     position: relative;
-
     background-color: #F4FFF8;
     border-radius: 20px;
     box-shadow: 0px 0px 39px -18px rgba(0,0,0,0.75);
-  
-  
-
 }
 #buttons{
     display: grid;
@@ -59,21 +62,15 @@ grid-template-columns: repeat(4, 1fr);
 
 .screen{
     background-color:#edf3ef ;
-    /* grid-column: 1/4; */
-    /* margin: 1rem 0 0rem; */
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content:flex-end;
-    
 }
 
 #big-screen{
     width: 98%;
-    /* height: 30%; */
     height: 6rem;
-    /* padding: 1.2rem; */
-    /* margin: 20px; */
     background-color:#edf3ef;
     border: none;
     text-align: right;
@@ -87,21 +84,17 @@ grid-template-columns: repeat(4, 1fr);
     border: none;
     text-align: right;
     margin-bottom: 10px;
-    /* font-size: 3rem; */
     line-height: 0px;
-    /* pointer-events: none; */
 }
 
 .operators, .numbers{
     background-color: rgb(153, 153, 153);
-    /* width: 70px;   */
      height: 70px;
-    /* border-radius: 50%; */
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    /* pointer-events: none; */
+
 }
 
 .operators{
@@ -115,3 +108,4 @@ grid-template-columns: repeat(4, 1fr);
 span, i{
     pointer-events: none;
 }
+
