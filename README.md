@@ -1,5 +1,7 @@
 # My Simple Calculator
 A simple and easy to use calculator built with JavaScript, HTML5, and CSS3. The calculator can be used to perform basic mathematical operations such as addition, subtraction, multiplication, and division, percentage & square root.
+
+
 <img src="/assets/images/responsive-mockup_1.png"
      alt="Markdown Monster icon"
      style="float: left; margin-right: 10px; width:70%" />
