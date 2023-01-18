@@ -1,6 +1,8 @@
 # My Simple Calculator
 A simple and easy to use calculator built with JavaScript, HTML5, and CSS3. The calculator can be used to perform basic mathematical operations such as addition, subtraction, multiplication, and division, percentage & square root.
-[Responsive mockup of calculator app](/assets/images/responsive-mockup_1.png)
+<img src="/assets/images/responsive-mockup_1.png"
+     alt="Markdown Monster icon"
+     style="float: left; margin-right: 10px; width:70%" />
 ## Getting Started
 To use the calculator, simply visit [jones-calc.netlify.app](https://jones-calc.netlify.app) in your web browser. The calculator interface will be displayed and you can start using it right away.
 
